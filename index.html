@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations, Graduate! 🎓✨ ဘွဲ့နှင်းသဘင် အမှတ်တရ</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Cinzel & Playfair Display for Royal Graduation vibe, Padauk for Burmese -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Padauk:wght@400;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Navy Blue, Royal Gold & Cream Luxury Palette */
+        :root {
+            --navy-deep: #091326;
+            --navy-mid: #102347;
+            --navy-card: rgba(18, 38, 76, 0.72);
+            --gold-bright: #f6d365;
+            --gold-rich: #d4af37;
+            --gold-deep: #aa771c;
+            --cream-soft: #fdfbf7;
+        }
+
+        body {
+            font-family: 'Padauk', 'Plus Jakarta Sans', sans-serif;
+            background: radial-gradient(circle at top center, #162f5e 0%, #0b1833 55%, #060d1c 100%);
+            color: var(--cream-soft);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .font-royal {
+            font-family: 'Cinzel', 'Playfair Display', serif;
+        }
+
+        .font-serif-en {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Metallic Gold Gradient Text */
+        .gold-gradient-text {
+            background: linear-gradient(120deg, #bf953f 0%, #fcf6ba 28%, #d4af37 52%, #fbf5b7 78%, #aa771c 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: goldShimmer 5s linear infinite;
+        }
+
+        @keyframes goldShimmer {
+            to { background-position: 200% center; }
+        }
+
+        /* Royal Glass Cards */
+        .royal-card {
+            background: var(--navy-card);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(212, 175, 55, 0.35);
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45), inset 0 0 20px rgba(212, 175, 55, 0.08);
+        }
+
+        .royal-card-hover {
+            transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .royal-card-hover:hover {
+            transform: translateY(-5px);
+            border-color: rgba(252, 246, 186, 0.75);
+            box-shadow: 0 18px 42px rgba(0, 0, 0, 0.55), 0 0 20px rgba(212, 175, 55, 0.22);
+        }
+
+        /* Gold Button */
+        .btn-royal-gold {
+            background: linear-gradient(135deg, #d4af37 0%, #f3e5ab 50%, #c59b27 100%);
+            color: #091326;
+            font-weight: 700;
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.35);
+            transition: all 0.25s ease;
+        }
+
+        .btn-royal-gold:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 10px 26px rgba(212, 175, 55, 0.55);
+        }
+
+        .btn-royal-gold:active {
+            transform: scale(0.97);
+        }
+
+        /* Floating Cap Animation */
+        @keyframes floatCap {
+            0%, 100% { transform: translateY(0px) rotate(-3deg); }
+            50% { transform: translateY(-10px) rotate(3deg); }
+        }
+        .animate-cap-float {
+            animation: floatCap 4s ease-in-out infinite;
+        }
+
+        /* Cap Toss Spin Animation */
+        @keyframes tossSpin {
+            0% { transform: translateY(0) rotate(0deg) scale(1); }
+            45% { transform: translateY(-165px) rotate(360deg) scale(1.22); }
+            75% { transform: translateY(-30px) rotate(680deg) scale(1.05); }
+            100% { transform: translateY(0) rotate(720deg) scale(1); }
+        }
+        .animate-toss {
+            animation: tossSpin 1.15s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        /* Music Equalizer */
+        @keyframes eqDance {
+            0%, 100% { height: 5px; }
+            50% { height: 16px; }
+        }
+        .eq-active .b1 { animation: eqDance 0.55s ease-in-out infinite; }
+        .eq-active .b2 { animation: eqDance 0.4s ease-in-out infinite 0.15s; }
+        .eq-active .b3 { animation: eqDance 0.65s ease-in-out infinite 0.25s; }
+
+        /* Pop-in animation */
+        @keyframes popReveal {
+            0% { opacity: 0; transform: scale(0.9) translateY(12px); }
+            100% { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        .animate-pop {
+            animation: popReveal 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        /* Step Slide Transition */
+        @keyframes stepSlideIn {
+            0% { opacity: 0; transform: translateX(28px) scale(0.98); }
+            100% { opacity: 1; transform: translateX(0) scale(1); }
+        }
+        .step-enter {
+            animation: stepSlideIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #091326; }
+        ::-webkit-scrollbar-thumb { background: #aa771c; border-radius: 9999px; }
+    </style>
+</head>
+<body class="relative selection:bg-amber-300 selection:text-slate-900 flex flex-col justify-between min-h-screen">
+
+    <!-- Background Gold Sparkles & Confetti Canvas -->
+    <canvas id="goldSparkleCanvas" class="fixed inset-0 pointer-events-none z-0"></canvas>
+    <canvas id="celebrationConfettiCanvas" class="fixed inset-0 pointer-events-none z-50"></canvas>
+
+    <!-- Sticky Header, Step Progress Bar & Graduation March Music Toggle -->
+    <header class="sticky top-0 z-30 px-4 pt-3 pb-2">
+        <div class="max-w-4xl mx-auto royal-card rounded-3xl px-4 sm:px-6 py-3 space-y-2.5">
+            <div class="flex items-center justify-between gap-2">
+                <div class="flex items-center gap-2.5">
+                    <span class="text-2xl">🎓</span>
+                    <div>
+                        <span class="font-royal text-sm sm:text-lg font-bold gold-gradient-text tracking-wider block leading-none">
+                            CLASS OF 2026
+                        </span>
+                        <span class="text-[11px] sm:text-xs text-amber-200/85">ဘွဲ့နှင်းသဘင် အထိမ်းအမှတ်</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <!-- Step Counter Badge -->
+                    <span id="stepBadge" class="hidden sm:inline-block px-3 py-1 rounded-full bg-amber-400/15 border border-amber-300/40 text-amber-200 text-xs font-bold">
+                        Step 1 / 5
+                    </span>
+                    <!-- Music Box Button -->
+                    <button id="marchMusicBtn" class="btn-royal-gold px-3.5 sm:px-4 py-2 rounded-full text-xs sm:text-sm flex items-center gap-2 cursor-pointer">
+                        <div id="musicEq" class="flex items-end gap-0.5 h-4 w-3.5 justify-center">
+                            <span class="b1 w-1 bg-slate-900 rounded-full h-1.5"></span>
+                            <span class="b2 w-1 bg-slate-900 rounded-full h-3"></span>
+                            <span class="b3 w-1 bg-slate-900 rounded-full h-1.5"></span>
+                        </div>
+                        <span id="marchBtnLabel">Play March 🎶</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Interactive Step Dots & Progress Bar -->
+            <div class="flex items-center gap-2 pt-1">
+                <button onclick="goToStep(1)" class="step-dot flex-1 h-2 rounded-full bg-amber-400 transition-all cursor-pointer" title="Step 1: Welcome"></button>
+                <button onclick="goToStep(2)" class="step-dot flex-1 h-2 rounded-full bg-white/15 hover:bg-white/30 transition-all cursor-pointer" title="Step 2: Timeline"></button>
+                <button onclick="goToStep(3)" class="step-dot flex-1 h-2 rounded-full bg-white/15 hover:bg-white/30 transition-all cursor-pointer" title="Step 3: Cap Toss"></button>
+                <button onclick="goToStep(4)" class="step-dot flex-1 h-2 rounded-full bg-white/15 hover:bg-white/30 transition-all cursor-pointer" title="Step 4: Photo Frame"></button>
+                <button onclick="goToStep(5)" class="step-dot flex-1 h-2 rounded-full bg-white/15 hover:bg-white/30 transition-all cursor-pointer" title="Step 5: Guestbook"></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Step-by-Step Container -->
+    <main class="relative z-10 max-w-4xl w-full mx-auto px-4 py-4 flex-1 flex flex-col justify-center">
+
+        <!-- =========================================================
+             STEP 1: WELCOME & GRADUATION COVER
+             ========================================================= -->
+        <section id="wizard-step-1" class="wizard-step royal-card rounded-3xl p-6 sm:p-10 md:p-12 text-center relative overflow-hidden step-enter">
+            <!-- Corner Gold Accents -->
+            <div class="absolute top-0 left-0 w-20 h-20 border-t-2 border-l-2 border-amber-400/50 rounded-tl-3xl pointer-events-none"></div>
+            <div class="absolute top-0 right-0 w-20 h-20 border-t-2 border-r-2 border-amber-400/50 rounded-tr-3xl pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 w-20 h-20 border-b-2 border-l-2 border-amber-400/50 rounded-bl-3xl pointer-events-none"></div>
+            <div class="absolute bottom-0 right-0 w-20 h-20 border-b-2 border-r-2 border-amber-400/50 rounded-br-3xl pointer-events-none"></div>
+
+            <!-- Custom SVG Graduation Cap & Diploma Emblem -->
+            <div class="max-w-[160px] sm:max-w-[190px] mx-auto mb-4 animate-cap-float">
+                <svg viewBox="0 0 240 170" class="w-full h-auto drop-shadow-2xl">
+                    <defs>
+                        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#fcf6ba"/>
+                            <stop offset="50%" stop-color="#d4af37"/>
+                            <stop offset="100%" stop-color="#aa771c"/>
+                        </linearGradient>
+                        <linearGradient id="navyCap" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#1e3a8a"/>
+                            <stop offset="100%" stop-color="#091326"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="120" cy="85" r="70" fill="url(#goldGrad)" opacity="0.14"/>
+                    <polygon points="120,18 220,56 120,94 20,56" fill="url(#navyCap)" stroke="url(#goldGrad)" stroke-width="3"/>
+                    <path d="M64,73 L64,104 C64,118 176,118 176,104 L176,73 L120,94 Z" fill="#0f2347" stroke="url(#goldGrad)" stroke-width="2.5"/>
+                    <circle cx="120" cy="56" r="5" fill="url(#goldGrad)"/>
+                    <path d="M120,56 Q165,68 182,110" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M177,110 L187,110 L190,132 L174,132 Z" fill="url(#goldGrad)"/>
+                    <g transform="translate(55, 126) rotate(-4)">
+                        <rect x="0" y="0" width="130" height="24" rx="12" fill="#fdfbf7" stroke="#d4af37" stroke-width="2"/>
+                        <ellipse cx="122" cy="12" rx="6" ry="11" fill="#e5dec9" stroke="#d4af37" stroke-width="1.5"/>
+                        <rect x="56" y="-2" width="16" height="28" fill="url(#goldGrad)"/>
+                        <polygon points="58,26 50,40 64,34 78,40 70,26" fill="url(#goldGrad)"/>
+                    </g>
+                </svg>
+            </div>
+
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-400/15 border border-amber-300/40 text-amber-200 text-xs sm:text-sm font-semibold mb-3">
+                <span>✨</span>
+                <span>HONORING YOUR HARD WORK & ACHIEVEMENT</span>
+                <span>✨</span>
+            </div>
+
+            <h1 class="font-royal text-3xl sm:text-5xl font-extrabold gold-gradient-text tracking-wide leading-tight">
+                Congratulations Graduate! 🎓
+            </h1>
+
+            <h2 class="text-xl sm:text-2xl font-bold text-amber-100 mt-3">
+                ဘွဲ့ရရှိခြင်းအတွက် လှိုက်လှိုက်လှဲလှဲ ဂုဏ်ယူပါတယ်! 🌟
+            </h2>
+
+            <p class="text-sm sm:text-base text-slate-200/90 max-w-xl mx-auto mt-3 leading-relaxed">
+                နှစ်ပေါင်းများစွာ ကြိုးစားအားထုတ်မှုတွေရဲ့ အသီးအပွင့်အဖြစ် ဒီနေ့မှာ ဂုဏ်ယူစရာ ဘွဲ့ဝတ်စုံလေးနဲ့ အောင်ပွဲခံနိုင်ခဲ့ပြီနော်။ အောက်ကခလုတ်လေးကို နှိပ်ပြီး ဂုဏ်ပြုအစီအစဉ်လေးကို တစ်ဆင့်ချင်း ကြည့်ရှုလိုက်ပါ!
+            </p>
+
+            <div class="mt-8">
+                <button onclick="startCelebrationFlow()" class="btn-royal-gold px-8 py-4 rounded-2xl text-base sm:text-lg inline-flex items-center gap-2.5 cursor-pointer">
+                    <span>Start Celebration</span>
+                    <span>🎉✨</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             STEP 2: INTERACTIVE GRADUATION MILESTONE TIMELINE
+             ========================================================= -->
+        <section id="wizard-step-2" class="wizard-step hidden royal-card rounded-3xl p-6 sm:p-10 step-enter">
+            <div class="text-center mb-6">
+                <span class="text-xs font-royal tracking-widest text-amber-300 uppercase">Step 2 of 5 • Milestones</span>
+                <h3 class="text-2xl sm:text-3xl font-bold text-amber-100 mt-1">
+                    အောင်မြင်မှု ခရီးစဉ် မှတ်တိုင်များ 🗓️✨
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-300 mt-1">
+                    ပထမနှစ်ကနေ ဘွဲ့ယူတဲ့နေ့အထိ မှတ်တိုင်တစ်ခုချင်းစီကို နှိပ်ပြီး အမှတ်တရ စကားလက်ဆောင်လေးတွေ ဖတ်ကြည့်ပါ -
+                </p>
+            </div>
+
+            <!-- Timeline Selector Cards -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
+                <button onclick="selectMilestone(0)" id="ms-btn-0" class="ms-btn p-3.5 rounded-2xl text-xs sm:text-sm font-bold border transition cursor-pointer bg-amber-400 text-slate-950 border-amber-300 flex flex-col items-center gap-1">
+                    <span class="text-2xl">🌱</span>
+                    <span>၁။ ပထမနှစ်</span>
+                </button>
+                <button onclick="selectMilestone(1)" id="ms-btn-1" class="ms-btn p-3.5 rounded-2xl text-xs sm:text-sm font-bold border transition cursor-pointer bg-white/5 text-amber-200 border-amber-400/30 hover:bg-white/15 flex flex-col items-center gap-1">
+                    <span class="text-2xl">📚</span>
+                    <span>၂။ ကြိုးစားမှုများ</span>
+                </button>
+                <button onclick="selectMilestone(2)" id="ms-btn-2" class="ms-btn p-3.5 rounded-2xl text-xs sm:text-sm font-bold border transition cursor-pointer bg-white/5 text-amber-200 border-amber-400/30 hover:bg-white/15 flex flex-col items-center gap-1">
+                    <span class="text-2xl">🏆</span>
+                    <span>၃။ နောက်ဆုံးနှစ်</span>
+                </button>
+                <button onclick="selectMilestone(3)" id="ms-btn-3" class="ms-btn p-3.5 rounded-2xl text-xs sm:text-sm font-bold border transition cursor-pointer bg-white/5 text-amber-200 border-amber-400/30 hover:bg-white/15 flex flex-col items-center gap-1">
+                    <span class="text-2xl">🎓</span>
+                    <span>၄။ ဘွဲ့ယူသည့်နေ့</span>
+                </button>
+            </div>
+
+            <!-- Dynamic Milestone Content Display -->
+            <div id="milestoneDisplayBox" class="p-6 sm:p-8 rounded-2xl bg-slate-950/65 border border-amber-400/45 animate-pop">
+                <div class="flex items-center justify-between mb-2">
+                    <span id="msTag" class="text-xs font-royal font-bold text-amber-300 tracking-wider">YEAR 01 • FRESHMAN BEGINNING</span>
+                    <span id="msEmoji" class="text-3xl">🌱</span>
+                </div>
+                <h4 id="msTitle" class="text-lg sm:text-2xl font-bold text-amber-100 mb-2">
+                    အိပ်မက်တွေ စတင်ပျိုးထောင်ခဲ့တဲ့ ပထမနှစ် နေ့ရက်များ
+                </h4>
+                <p id="msDesc" class="text-sm sm:text-base text-slate-200 leading-relaxed mb-4">
+                    တက္ကသိုလ်ကျောင်းတော်ကြီးထဲ စတင်ဝင်ရောက်ခဲ့ချိန်က ရင်ခုန်စိတ်လှုပ်ရှားမှုတွေနဲ့အတူ ကိုယ်ဝါသနာပါရာ ပညာရပ်ကို စတင်လေ့လာသင်ယူခဲ့ပါတယ်။
+                </p>
+                <p id="msQuote" class="font-serif-en italic text-xs sm:text-sm text-amber-300 border-l-2 border-amber-400 pl-3">
+                    "The journey of a thousand miles begins with one brave step."
+                </p>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             STEP 3: GRADUATION CAP TOSS MINI-GAME
+             ========================================================= -->
+        <section id="wizard-step-3" class="wizard-step hidden royal-card rounded-3xl p-6 sm:p-10 text-center step-enter">
+            <span class="text-xs font-royal tracking-widest text-amber-300 uppercase">Step 3 of 5 • Celebration Mini-Game</span>
+            <h3 class="text-2xl sm:text-3xl font-bold text-amber-100 mt-1">
+                ဘွဲ့ဦးထုပ် မိုးပေါ်မြှောက်တင် အောင်ပွဲခံမယ်! 🎓🎉
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-300 mt-1 max-w-md mx-auto">
+                ဘွဲ့ဦးထုပ်လေးကို နှိပ်ပြီး (သို့မဟုတ် အောက်ကခလုတ်ကို နှိပ်ပြီး) မိုးပေါ်မြှောက်တင်လိုက်ပါ!
+            </p>
+
+            <!-- Toss Stage -->
+            <div class="relative w-full h-52 flex items-end justify-center my-4 bg-slate-950/40 rounded-2xl border border-amber-400/25 overflow-hidden">
+                <div id="tossCapIcon" class="text-7xl sm:text-8xl mb-4 select-none cursor-pointer transition-transform hover:scale-110" onclick="tossGraduationCap()">
+                    🎓
+                </div>
+            </div>
+
+            <!-- Celebratory Message Banner -->
+            <div id="tossCelebrationBanner" class="mb-5 p-3.5 rounded-xl bg-amber-400/15 border border-amber-300/40 text-amber-200 text-sm font-bold">
+                Hats Off to the Graduate! ဦးထုပ်လေးကို မြှောက်တင်လိုက်ပါဦး ✨
+            </div>
+
+            <div class="max-w-sm mx-auto space-y-3">
+                <button onclick="tossGraduationCap()" class="btn-royal-gold w-full py-3.5 px-6 rounded-2xl text-base cursor-pointer flex items-center justify-center gap-2">
+                    <span>Toss Graduation Cap!</span>
+                    <span>🎊</span>
+                </button>
+                <p class="text-xs text-amber-200/90 font-semibold">
+                    အောင်ပွဲခံ မြှောက်တင်မှု အကြိမ်ရေ: <span id="capTossCount" class="text-amber-300 text-base font-bold">0</span> ကြိမ် ✨
+                </p>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             STEP 4: GRADUATION PHOTO MEMORY FRAME
+             ========================================================= -->
+        <section id="wizard-step-4" class="wizard-step hidden royal-card rounded-3xl p-6 sm:p-10 step-enter">
+            <div class="text-center mb-6">
+                <span class="text-xs font-royal tracking-widest text-amber-300 uppercase">Step 4 of 5 • Memory Frame</span>
+                <h3 class="text-2xl sm:text-3xl font-bold text-amber-100 mt-1">
+                    ဘွဲ့နှင်းသဘင် ရွှေရောင်အမှတ်တရ ဓာတ်ပုံဘောင် 📸👑
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-300 mt-1">
+                    ကိုယ်ပိုင်ဘွဲ့ဓာတ်ပုံလေး ရွေးထည့်ပြီး အမှတ်တရ စာတန်းလေးနဲ့ ကြည့်ရှုနိုင်ပါတယ်
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                <!-- Royal Gold Photo Frame Preview (7 cols) -->
+                <div class="md:col-span-7">
+                    <div class="p-3 sm:p-4 rounded-2xl bg-gradient-to-br from-amber-300 via-yellow-500 to-amber-700 shadow-2xl">
+                        <div class="bg-slate-950 rounded-xl overflow-hidden border-2 border-amber-200/80">
+                            <div id="photoFrameContainer" class="h-60 sm:h-72 bg-gradient-to-br from-blue-950 via-slate-900 to-indigo-950 flex flex-col items-center justify-center p-6 text-center relative">
+                                <!-- Default Illustrated Graduation Card -->
+                                <svg viewBox="0 0 220 150" class="w-44 h-auto mb-2">
+                                    <polygon points="110,20 185,50 110,80 35,50" fill="#1e3a8a" stroke="#fcf6ba" stroke-width="2.5"/>
+                                    <path d="M68,63 L68,90 C68,102 152,102 152,90 L152,63 L110,80 Z" fill="#091326" stroke="#d4af37" stroke-width="2"/>
+                                    <path d="M110,50 Q145,60 158,96" fill="none" stroke="#fcf6ba" stroke-width="2.5"/>
+                                    <circle cx="158" cy="100" r="4.5" fill="#d4af37"/>
+                                    <rect x="65" y="114" width="90" height="16" rx="8" fill="#fdfbf7" stroke="#d4af37" stroke-width="1.5"/>
+                                    <rect x="104" y="112" width="12" height="20" fill="#d4af37"/>
+                                </svg>
+                                <span class="font-royal text-sm sm:text-base gold-gradient-text font-bold tracking-wider">CLASS OF 2026 GRADUATE</span>
+                                <span class="text-[11px] text-amber-200/75 mt-1">Proud Moment • Forever Cherished</span>
+                            </div>
+                            <div class="p-4 bg-slate-900 text-center border-t border-amber-400/30">
+                                <p id="frameCaptionDisplay" class="text-sm sm:text-base font-bold text-amber-100">
+                                    "ပျော်ရွှင်ဂုဏ်ယူစရာ ဘွဲ့နှင်းသဘင် အမှတ်တရနေ့ရက် 🎓✨"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upload & Caption Controls (5 cols) -->
+                <div class="md:col-span-5 space-y-4 bg-slate-950/50 p-5 rounded-2xl border border-amber-400/30">
+                    <h4 class="font-bold text-amber-200 text-sm sm:text-base">ဓာတ်ပုံနှင့် စာတန်း ပြောင်းလဲရန် ✨</h4>
+                    <div>
+                        <label class="flex items-center justify-center gap-2 w-full px-4 py-3.5 rounded-xl bg-amber-400/15 hover:bg-amber-400/25 border border-dashed border-amber-300/70 text-amber-200 text-xs sm:text-sm font-bold cursor-pointer transition">
+                            <span>🖼️</span>
+                            <span id="selectedFileName">ဘွဲ့ဓာတ်ပုံ ရွေးချယ်ရန်</span>
+                            <input type="file" id="photoFileInput" accept="image/*" class="hidden" onchange="previewFramedPhoto(this)">
+                        </label>
+                    </div>
+                    <div>
+                        <label class="block text-xs text-slate-300 mb-1.5">အမှတ်တရ စာတန်း (Caption):</label>
+                        <input type="text" id="photoCaptionInput" placeholder="ဥပမာ - ဘွဲ့ယူတဲ့နေ့ အမှတ်တရ 🎓" oninput="updateFrameCaption(this.value)" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-amber-300/35 text-amber-50 placeholder-slate-400 text-xs sm:text-sm focus:outline-none focus:border-amber-300">
+                    </div>
+                    <button type="button" onclick="triggerGoldConfettiBurst()" class="btn-royal-gold w-full py-3 rounded-xl text-xs sm:text-sm cursor-pointer">
+                        ဓာတ်ပုံကို ဂုဏ်ပြုရွှေမှုန်ကြဲမယ် ✨
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             STEP 5: SHARED GRADUATION GUESTBOOK & BLESSINGS WALL (FIREBASE SYNC)
+             ========================================================= -->
+        <section id="wizard-step-5" class="wizard-step hidden royal-card rounded-3xl p-6 sm:p-10 space-y-6 step-enter">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-amber-400/25 pb-4">
+                <div>
+                    <span class="text-xs font-royal tracking-widest text-amber-300 uppercase">Step 5 of 5 • Shared Guestbook</span>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-amber-100 mt-0.5">
+                        အမှတ်တရ ဂုဏ်ပြုဆုတောင်းလွှာများ ✉️💛
+                    </h3>
+                   
+                </div>
+
+                <!-- Sync Status & Collapsible Firebase Guide Toggle -->
+                <div class="flex flex-col items-start sm:items-end gap-2">
+                    <span id="cloudSyncBadge" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-400/15 border border-amber-300/40 text-amber-200 text-xs font-bold">
+                        <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                        <span id="cloudSyncText">Demo / Local Mode</span>
+                    </span>
+                    
+                </div>
+            </div>
+
+            <!-- Collapsible Burmese Firebase Setup Guide -->
+            <div id="firebaseGuideBox" class="hidden p-5 rounded-2xl bg-slate-950/85 border border-amber-400/50 text-xs sm:text-sm text-slate-200 space-y-2.5 animate-pop">
+                <div class="flex items-center justify-between">
+                    <h4 class="font-bold text-amber-300 text-sm sm:text-base">☁️ ကိုယ်ရေးလိုက်တဲ့ စာတွေကို တခြားသူတွေပါ အမြဲမြင်ရအောင် Firebase ချိတ်ဆက်နည်း</h4>
+                    <button type="button" onclick="toggleFirebaseGuide()" class="text-slate-400 hover:text-white font-bold px-2 cursor-pointer">✕</button>
+                </div>
+                <p class="leading-relaxed">
+                    လက်ရှိမှာ Firebase Config မထည့်ရသေးရင် စာတွေကို ဒီစက်ထဲမှာပဲ (Local Storage) သိမ်းပေးထားပါမယ်။ တခြားဖုန်း/ကွန်ပျူတာတွေကနေ လင့်ခ်ဖွင့်ကြည့်ရင်ပါ အချင်းချင်း စာတွေမြင်ရဖို့ အောက်ပါအတိုင်း လုပ်ဆောင်ပါ -
+                </p>
+                <ol class="list-decimal list-inside space-y-1.5 text-slate-300">
+                    <li><span class="text-amber-200 font-semibold">console.firebase.google.com</span> မှာ Project အသစ်တစ်ခု ဖန်တီးပါ။</li>
+                    <li>ဘယ်ဘက်မီနူးက <span class="text-amber-200 font-semibold">Build &gt; Firestore Database</span> ကိုနှိပ်ပြီး <span class="text-amber-200 font-semibold">Create database (Test mode)</span> ကို ရွေးပါ။</li>
+                    <li>Project Settings ထဲကနေ Web App (<code class="text-amber-300">&lt;/&gt;</code>) တစ်ခုထည့်ပြီး ရလာတဲ့ <code class="text-amber-300">firebaseConfig</code> ကုဒ်ကို ကူးယူပါ။</li>
+                    <li>ဒီ <code class="text-amber-300">graduation.html</code> ဖိုင်ရဲ့ အောက်ဆုံးနားက <code class="text-amber-300">const firebaseConfig = { ... };</code> နေရာမှာ အစားထိုးထည့်ပြီး GitHub ပေါ် ပြန်တင်လိုက်ရုံပါပဲ!</li>
+                </ol>
+            </div>
+
+            <!-- Post New Congratulatory Message Form -->
+            <form onsubmit="postGradWish(event)" class="p-4 sm:p-5 rounded-2xl bg-slate-950/55 border border-amber-400/35 flex flex-col sm:flex-row gap-3">
+                <input type="text" id="gradSenderInput" placeholder="သင့်နာမည် (ဥပမာ - Bestie / မိသားစု)" class="sm:w-1/3 px-4 py-3 rounded-xl bg-slate-900 border border-amber-300/35 text-amber-50 placeholder-slate-400 text-xs sm:text-sm focus:outline-none focus:border-amber-300" required>
+                <input type="text" id="gradWishInput" placeholder="ဘွဲ့ရသူငယ်ချင်းအတွက် အမှတ်တရ ဂုဏ်ပြုစကား ရေးထားခဲ့ပါ..." class="flex-1 px-4 py-3 rounded-xl bg-slate-900 border border-amber-300/35 text-amber-50 placeholder-slate-400 text-xs sm:text-sm focus:outline-none focus:border-amber-300" required>
+                <button type="submit" id="postWishBtn" class="btn-royal-gold px-6 py-3 rounded-xl text-xs sm:text-sm cursor-pointer whitespace-nowrap">
+                    စာချန်ထားမယ် ✨
+                </button>
+            </form>
+
+            <!-- Shared Blessings Wall Feed -->
+            <div id="gradWishesList" class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-h-96 overflow-y-auto pr-1">
+                <!-- Populated via Firebase Real-time Listener or Default + LocalStorage -->
+            </div>
+        </section>
+
+        <!-- =========================================================
+             STEP NAVIGATION CONTROLS (PREVIOUS / NEXT)
+             ========================================================= -->
+        <div class="mt-6 flex items-center justify-between gap-4">
+            <button id="prevStepBtn" onclick="prevStep()" class="hidden px-5 sm:px-6 py-3 rounded-2xl bg-white/10 hover:bg-white/20 border border-amber-300/40 text-amber-100 font-bold text-xs sm:text-sm transition cursor-pointer flex items-center gap-2">
+                <span>←</span>
+                <span>ရှေ့တစ်ဆင့်သို့ (Previous)</span>
+            </button>
+            <div class="flex-1"></div>
+            <button id="nextStepBtn" onclick="nextStep()" class="btn-royal-gold px-6 sm:px-7 py-3 rounded-2xl text-xs sm:text-sm cursor-pointer flex items-center gap-2">
+                <span>နောက်တစ်ဆင့်သို့ (Next)</span>
+                <span>→</span>
+            </button>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="relative z-10 text-center pb-6 px-4 text-xs text-amber-200/70">
+        <p class="font-royal tracking-wider">CONGRATULATIONS • CLASS OF 2026 🎓✨</p>
+    </footer>
+
+    <!-- Firebase SDK (Compat for seamless single-file HTML usage) -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+    <script>
+        /* =========================================================
+           0. STEP-BY-STEP WIZARD FLOW CONTROLLER
+           ========================================================= */
+        let currentStep = 1;
+        const totalSteps = 5;
+
+        function goToStep(stepNumber) {
+            if (stepNumber < 1 || stepNumber > totalSteps) return;
+            currentStep = stepNumber;
+
+            // Hide all steps, show target step
+            document.querySelectorAll('.wizard-step').forEach((el, idx) => {
+                if (idx + 1 === currentStep) {
+                    el.classList.remove('hidden');
+                    el.classList.remove('step-enter');
+                    void el.offsetWidth;
+                    el.classList.add('step-enter');
+                } else {
+                    el.classList.add('hidden');
+                }
+            });
+
+            // Update Top Progress Dots & Badge
+            document.getElementById('stepBadge').textContent = `Step ${currentStep} / ${totalSteps}`;
+            document.querySelectorAll('.step-dot').forEach((dot, idx) => {
+                if (idx + 1 <= currentStep) {
+                    dot.className = 'step-dot flex-1 h-2 rounded-full bg-amber-400 transition-all cursor-pointer shadow-[0_0_8px_rgba(251,191,36,0.6)]';
+                } else {
+                    dot.className = 'step-dot flex-1 h-2 rounded-full bg-white/15 hover:bg-white/30 transition-all cursor-pointer';
+                }
+            });
+
+            // Update Previous / Next Buttons
+            const prevBtn = document.getElementById('prevStepBtn');
+            const nextBtn = document.getElementById('nextStepBtn');
+
+            if (currentStep === 1) {
+                prevBtn.classList.add('hidden');
+            } else {
+                prevBtn.classList.remove('hidden');
+            }
+
+            if (currentStep === totalSteps) {
+                nextBtn.classList.add('hidden');
+            } else {
+                nextBtn.classList.remove('hidden');
+            }
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function nextStep() {
+            if (currentStep < totalSteps) {
+                goToStep(currentStep + 1);
+            }
+        }
+
+        function prevStep() {
+            if (currentStep > 1) {
+                goToStep(currentStep - 1);
+            }
+        }
+
+        function startCelebrationFlow() {
+            triggerGoldConfettiBurst();
+            if (!isMarchPlaying) {
+                document.getElementById('marchMusicBtn').click();
+            }
+            goToStep(2);
+        }
+
+        /* =========================================================
+           1. WEB AUDIO API: "POMP AND CIRCUMSTANCE" GRADUATION MARCH
+           ========================================================= */
+        let gradAudioCtx = null;
+        let isMarchPlaying = false;
+        let marchTimer = null;
+        let noteIdx = 0;
+
+        // Elgar's "Pomp and Circumstance" (Land of Hope and Glory theme)
+        const graduationMarchNotes = [
+            { f: 329.63, d: 0.75 }, // E4
+            { f: 293.66, d: 0.35 }, // D4
+            { f: 261.63, d: 0.40 }, // C4
+            { f: 293.66, d: 0.75 }, // D4
+            { f: 329.63, d: 0.75 }, // E4
+            { f: 220.00, d: 1.30 }, // A3
+            { f: 246.94, d: 0.40 }, // B3
+            { f: 261.63, d: 0.75 }, // C4
+            { f: 246.94, d: 0.35 }, // B3
+            { f: 220.00, d: 0.40 }, // A3
+            { f: 246.94, d: 0.75 }, // B3
+            { f: 261.63, d: 0.75 }, // C4
+            { f: 196.00, d: 1.40 }, // G3
+            { f: 261.63, d: 0.75 }, // C4
+            { f: 293.66, d: 0.40 }, // D4
+            { f: 329.63, d: 0.75 }, // E4
+            { f: 392.00, d: 0.75 }, // G4
+            { f: 349.23, d: 0.75 }, // F4
+            { f: 329.63, d: 0.75 }, // E4
+            { f: 293.66, d: 1.40 }, // D4
+            { f: 0, d: 0.7 }
+        ];
+
+        function playBrassChime(freq, dur) {
+            if (!gradAudioCtx || freq === 0) return;
+            try {
+                const now = gradAudioCtx.currentTime;
+                const osc1 = gradAudioCtx.createOscillator();
+                const osc2 = gradAudioCtx.createOscillator();
+                const gain = gradAudioCtx.createGain();
+
+                osc1.type = 'triangle';
+                osc1.frequency.setValueAtTime(freq, now);
+
+                osc2.type = 'sine';
+                osc2.frequency.setValueAtTime(freq * 2, now);
+
+                const subGain = gradAudioCtx.createGain();
+                subGain.gain.setValueAtTime(0.05, now);
+
+                gain.gain.setValueAtTime(0.001, now);
+                gain.gain.linearRampToValueAtTime(0.15, now + 0.06);
+                gain.gain.exponentialRampToValueAtTime(0.0008, now + dur + 0.3);
+
+                osc1.connect(gain);
+                osc2.connect(subGain);
+                subGain.connect(gain);
+                gain.connect(gradAudioCtx.destination);
+
+                osc1.start(now);
+                osc2.start(now);
+                osc1.stop(now + dur + 0.35);
+                osc2.stop(now + dur + 0.35);
+            } catch (err) {
+                console.warn(err);
+            }
+        }
+
+        function stepGraduationMarch() {
+            if (!isMarchPlaying) return;
+            const n = graduationMarchNotes[noteIdx];
+            playBrassChime(n.f, n.d);
+            noteIdx = (noteIdx + 1) % graduationMarchNotes.length;
+            marchTimer = setTimeout(stepGraduationMarch, n.d * 1000);
+        }
+
+        document.getElementById('marchMusicBtn').addEventListener('click', () => {
+            if (!gradAudioCtx) {
+                gradAudioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            }
+            if (gradAudioCtx.state === 'suspended') {
+                gradAudioCtx.resume();
+            }
+
+            const label = document.getElementById('marchBtnLabel');
+            const eq = document.getElementById('musicEq');
+
+            if (!isMarchPlaying) {
+                isMarchPlaying = true;
+                label.textContent = 'Playing March 🎺';
+                eq.classList.add('eq-active');
+                stepGraduationMarch();
+            } else {
+                isMarchPlaying = false;
+                clearTimeout(marchTimer);
+                label.textContent = 'Play March 🎶';
+                eq.classList.remove('eq-active');
+            }
+        });
+
+        /* =========================================================
+           2. FLOATING GOLD SPARKLES & CONFETTI CANVASES
+           ========================================================= */
+        const sparkleCanvas = document.getElementById('goldSparkleCanvas');
+        const sCtx = sparkleCanvas.getContext('2d');
+        const confettiCanvas = document.getElementById('celebrationConfettiCanvas');
+        const cCtx = confettiCanvas.getContext('2d');
+
+        let sparkles = [];
+        let confettis = [];
+
+        function resizeAllCanvases() {
+            sparkleCanvas.width = window.innerWidth;
+            sparkleCanvas.height = window.innerHeight;
+            confettiCanvas.width = window.innerWidth;
+            confettiCanvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeAllCanvases);
+        resizeAllCanvases();
+
+        function initGoldSparkles() {
+            sparkles = [];
+            const total = Math.min(75, Math.floor((window.innerWidth * window.innerHeight) / 14000));
+            const goldTones = ['#fcf6ba', '#d4af37', '#f6d365', '#ffffff', '#fde68a'];
+            for (let i = 0; i < total; i++) {
+                sparkles.push({
+                    x: Math.random() * sparkleCanvas.width,
+                    y: Math.random() * sparkleCanvas.height,
+                    r: Math.random() * 2.6 + 1,
+                    vy: Math.random() * 0.35 + 0.12,
+                    vx: (Math.random() - 0.5) * 0.25,
+                    alpha: Math.random(),
+                    dAlpha: (Math.random() * 0.025 + 0.008) * (Math.random() < 0.5 ? 1 : -1),
+                    color: goldTones[Math.floor(Math.random() * goldTones.length)]
+                });
+            }
+        }
+
+        function renderSparklesAndConfetti() {
+            sCtx.clearRect(0, 0, sparkleCanvas.width, sparkleCanvas.height);
+
+            sparkles.forEach(p => {
+                p.y -= p.vy;
+                p.x += p.vx;
+                p.alpha += p.dAlpha;
+                if (p.alpha >= 1 || p.alpha <= 0.12) p.dAlpha *= -1;
+                if (p.y < -10) {
+                    p.y = sparkleCanvas.height + 10;
+                    p.x = Math.random() * sparkleCanvas.width;
+                }
+
+                sCtx.save();
+                sCtx.globalAlpha = Math.max(0, Math.min(1, p.alpha));
+                sCtx.beginPath();
+                sCtx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                sCtx.fillStyle = p.color;
+                sCtx.shadowBlur = 8;
+                sCtx.shadowColor = '#f6d365';
+                sCtx.fill();
+                sCtx.restore();
+            });
+
+            cCtx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+            for (let i = confettis.length - 1; i >= 0; i--) {
+                const c = confettis[i];
+                c.x += c.vx;
+                c.y += c.vy;
+                c.vy += 0.2;
+                c.rot += c.vRot;
+                c.alpha -= 0.008;
+
+                if (c.alpha <= 0 || c.y > confettiCanvas.height + 20) {
+                    confettis.splice(i, 1);
+                    continue;
+                }
+
+                cCtx.save();
+                cCtx.translate(c.x, c.y);
+                cCtx.rotate(c.rot);
+                cCtx.globalAlpha = c.alpha;
+                cCtx.fillStyle = c.color;
+                cCtx.fillRect(-c.w / 2, -c.h / 2, c.w, c.h);
+                cCtx.restore();
+            }
+
+            requestAnimationFrame(renderSparklesAndConfetti);
+        }
+
+        function triggerGoldConfettiBurst(x = window.innerWidth / 2, y = window.innerHeight * 0.45) {
+            const colors = ['#fcf6ba', '#d4af37', '#f6d365', '#ffffff', '#3b82f6', '#fde047'];
+            for (let i = 0; i < 95; i++) {
+                const angle = Math.random() * Math.PI * 2;
+                const speed = Math.random() * 11 + 4;
+                confettis.push({
+                    x,
+                    y,
+                    vx: Math.cos(angle) * speed,
+                    vy: Math.sin(angle) * speed - 4,
+                    w: Math.random() * 9 + 5,
+                    h: Math.random() * 5 + 3,
+                    color: colors[Math.floor(Math.random() * colors.length)],
+                    rot: Math.random() * 360,
+                    vRot: (Math.random() - 0.5) * 0.22,
+                    alpha: 1
+                });
+            }
+        }
+
+        /* =========================================================
+           3. STEP 4: PHOTO MEMORY FRAME PREVIEW
+           ========================================================= */
+        function previewFramedPhoto(input) {
+            const label = document.getElementById('selectedFileName');
+            const container = document.getElementById('photoFrameContainer');
+
+            if (input.files && input.files[0]) {
+                const file = input.files[0];
+                label.textContent = file.name;
+                const imgUrl = URL.createObjectURL(file);
+                container.innerHTML = `<img src="${imgUrl}" alt="Graduation Photo" class="w-full h-full object-cover rounded-lg animate-pop">`;
+                container.className = 'h-64 sm:h-80 bg-slate-950 flex items-center justify-center overflow-hidden';
+                triggerGoldConfettiBurst();
+            }
+        }
+
+        function updateFrameCaption(val) {
+            const display = document.getElementById('frameCaptionDisplay');
+            display.textContent = val.trim()
+                ? `"${val.trim()}"`
+                : '"ပျော်ရွှင်ဂုဏ်ယူစရာ ဘွဲ့နှင်းသဘင် အမှတ်တရနေ့ရက် 🎓✨"';
+        }
+
+        /* =========================================================
+           4. STEP 2: INTERACTIVE GRADUATION JOURNEY TIMELINE
+           ========================================================= */
+        const journeyMilestones = [
+            {
+                tag: "YEAR 01 • FRESHMAN BEGINNING",
+                emoji: "🌱",
+                title: "အိပ်မက်တွေ စတင်ပျိုးထောင်ခဲ့တဲ့ ပထမနှစ် နေ့ရက်များ",
+                desc: "တက္ကသိုလ်ကျောင်းတော်ကြီးထဲ စတင်ဝင်ရောက်ခဲ့ချိန်က ရင်ခုန်စိတ်လှုပ်ရှားမှုတွေနဲ့အတူ ကိုယ်ဝါသနာပါရာ ပညာရပ်ကို စတင်လေ့လာသင်ယူခဲ့ပါတယ်။",
+                quote: '"The journey of a thousand miles begins with one brave step."'
+            },
+            {
+                tag: "YEAR 02 - 03 • DEDICATION & GROWTH",
+                emoji: "📚",
+                title: "မဆုတ်မနစ် ကြိုးစားအားထုတ်ခဲ့မှုများ",
+                desc: "စာမေးပွဲတွေ၊ Presentation တွေနဲ့ ခက်ခဲတဲ့ သင်ခန်းစာတွေကို ဇွဲမလျှော့ဘဲ သူငယ်ချင်းတွေနဲ့အတူ ကြိုးစားကျော်ဖြတ်နိုင်ခဲ့ပါတယ်။",
+                quote: '"Success is the sum of small efforts, repeated day in and day out."'
+            },
+            {
+                tag: "FINAL YEAR • THESIS & ACHIEVEMENT",
+                emoji: "🏆",
+                title: "နောက်ဆုံးနှစ် စာမေးပွဲနှင့် အောင်မြင်မှု မှတ်တိုင်",
+                desc: "Thesis နဲ့ နောက်ဆုံးစာမေးပွဲကြီးကို အောင်မြင်စွာ ပြီးမြောက်နိုင်ခဲ့ပြီး ဘွဲ့ယူဖို့ အဆင်သင့်ဖြစ်ခဲ့တဲ့ ဂုဏ်ယူစရာ အချိန်ကာလပါ။",
+                quote: '"You believed you could, so you did."'
+            },
+            {
+                tag: "GRADUATION DAY • BRIGHT HORIZONS",
+                emoji: "🎓",
+                title: "ဂုဏ်ယူဖွယ်ရာ ဘွဲ့နှင်းသဘင် အောင်ပွဲနေ့",
+                desc: "မိဘဆရာသမားများရဲ့ ဂုဏ်ယူဝမ်းမြောက်မှုတွေနဲ့အတူ ဘွဲ့ဝတ်စုံလေးဝတ်ဆင်ပြီး ဘွဲ့လက်မှတ်ကို ဂုဏ်ယူစွာ လက်ခံရယူနိုင်ခဲ့ပါပြီ!",
+                quote: '"Caps off to the past, glasses up to the future!"'
+            }
+        ];
+
+        function selectMilestone(idx) {
+            document.querySelectorAll('.ms-btn').forEach((btn, i) => {
+                if (i === idx) {
+                    btn.className = 'ms-btn p-3.5 rounded-2xl text-xs sm:text-sm font-bold border transition cursor-pointer bg-amber-400 text-slate-950 border-amber-300 flex flex-col items-center gap-1';
+                } else {
+                    btn.className = 'ms-btn p-3.5 rounded-2xl text-xs sm:text-sm font-bold border transition cursor-pointer bg-white/5 text-amber-200 border-amber-400/30 hover:bg-white/15 flex flex-col items-center gap-1';
+                }
+            });
+
+            const m = journeyMilestones[idx];
+            const box = document.getElementById('milestoneDisplayBox');
+            box.classList.remove('animate-pop');
+            void box.offsetWidth;
+            box.classList.add('animate-pop');
+
+            document.getElementById('msTag').textContent = m.tag;
+            document.getElementById('msEmoji').textContent = m.emoji;
+            document.getElementById('msTitle').textContent = m.title;
+            document.getElementById('msDesc').textContent = m.desc;
+            document.getElementById('msQuote').textContent = m.quote;
+        }
+
+        /* =========================================================
+           5. STEP 3: GRADUATION CAP TOSS MINI-GAME
+           ========================================================= */
+        let tossCounter = 0;
+        let isTossing = false;
+
+        const tossCheers = [
+            "Hats Off to the Graduate! အောင်ပွဲခံလိုက်ပါပြီ! 🎓✨",
+            "You Did It! ကြိုးစားမှုတွေ အရာထင်ပြီနော်! 🌟🥂",
+            "Sky is the Limit! အနာဂတ်မှာ အမြင့်ဆုံး ပျံသန်းနိုင်ပါစေ! 🚀💛",
+            "So Proud of You! တကယ့်ကို ဂုဏ်ယူရပါတယ် သူငယ်ချင်း! 🏆🎉"
+        ];
+
+        function tossGraduationCap() {
+            if (isTossing) return;
+            isTossing = true;
+
+            const cap = document.getElementById('tossCapIcon');
+            cap.classList.remove('animate-toss');
+            void cap.offsetWidth;
+            cap.classList.add('animate-toss');
+
+            tossCounter++;
+            document.getElementById('capTossCount').textContent = tossCounter;
+            document.getElementById('tossCelebrationBanner').textContent = tossCheers[tossCounter % tossCheers.length];
+            triggerGoldConfettiBurst(window.innerWidth / 2, window.innerHeight * 0.45);
+
+            setTimeout(() => {
+                cap.classList.remove('animate-toss');
+                isTossing = false;
+            }, 1150);
+        }
+
+        /* =========================================================
+           6. STEP 5: SHARED GUESTBOOK (FIREBASE FIRESTORE + FALLBACK)
+           ========================================================= */
+        // 🔧 လူတိုင်းမြင်ရအောင် Cloud Sync လုပ်လိုပါက အောက်ပါ firebaseConfig တွင် သင့် Firebase Project အချက်အလက်များ အစားထိုးထည့်ပါ
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+            projectId: "YOUR_PROJECT_ID",
+            storageBucket: "YOUR_PROJECT_ID.appspot.com",
+            messagingSenderId: "YOUR_SENDER_ID",
+            appId: "YOUR_APP_ID"
+        };
+
+        const defaultGradWishes = [
+            { sender: "Your Proud Bestie 🎓", text: "Congratulations ပါ သူငယ်ချင်းရေ! မင်းကြိုးစားခဲ့သမျှ အရာထင်ပြီမို့ အရမ်းဂုဏ်ယူတယ်နော် ✨" },
+            { sender: "Family & Loved Ones 💛", text: "ဘွဲ့ရပြီးနောက်ပိုင်း ခြေလှမ်းတိုင်းမှာ ကံကောင်းခြင်းနဲ့ အောင်မြင်မှုတွေ အမြဲရှိနေပါစေ!" },
+            { sender: "Campus Squad 🥂", text: "ဘွဲ့ယူပြီးရင် မုန့်ဝယ်ကျွေးဖို့ မမေ့နဲ့နော်! ပျော်ရွှင်စရာ ဘွဲ့နှင်းသဘင်နေ့လေး ဖြစ်ပါစေ 🎉" },
+            { sender: "Senior Mentor 🌟", text: "ကြိုးစားအားထုတ်မှုရဲ့ ရလဒ်ကောင်းကို ပိုင်ဆိုင်နိုင်ခဲ့ပြီ။ ဆက်လက်ပြီး ထွန်းတောက်ပါစေ!" }
+        ];
+
+        let firestoreDb = null;
+        let isFirebaseConnected = false;
+
+        function toggleFirebaseGuide() {
+            document.getElementById('firebaseGuideBox').classList.toggle('hidden');
+        }
+
+        function initGuestbookStorage() {
+            const isConfigured = firebaseConfig.apiKey && firebaseConfig.apiKey !== "YOUR_API_KEY" && firebaseConfig.projectId !== "YOUR_PROJECT_ID";
+
+            if (isConfigured && typeof firebase !== 'undefined') {
+                try {
+                    if (!firebase.apps.length) {
+                        firebase.initializeApp(firebaseConfig);
+                    }
+                    firestoreDb = firebase.firestore();
+                    isFirebaseConnected = true;
+
+                    // Update Status Badge to Live Cloud Sync
+                    const badge = document.getElementById('cloudSyncBadge');
+                    badge.className = 'inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/50 text-emerald-300 text-xs font-bold';
+                    badge.innerHTML = '<span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span><span>Cloud Sync Active (လူတိုင်းမြင်နိုင်သည်)</span>';
+
+                    // Real-time listener for all visitors
+                    firestoreDb.collection('graduation_blessings')
+                        .orderBy('createdAt', 'desc')
+                        .onSnapshot((snapshot) => {
+                            const cloudWishes = [];
+                            snapshot.forEach(doc => {
+                                cloudWishes.push(doc.data());
+                            });
+                            renderGradWishes([...cloudWishes, ...defaultGradWishes]);
+                        }, (error) => {
+                            console.warn("Firestore read error, falling back to local:", error);
+                            loadLocalWishes();
+                        });
+                    return;
+                } catch (e) {
+                    console.warn("Firebase init failed, using local fallback:", e);
+                }
+            }
+
+            // Fallback mode (Local Storage + Preloaded Burmese Wishes)
+            loadLocalWishes();
+        }
+
+        function loadLocalWishes() {
+            let saved = [];
+            try {
+                saved = JSON.parse(localStorage.getItem('grad_guestbook_wishes_v1') || '[]');
+            } catch (e) {
+                saved = [];
+            }
+            renderGradWishes([...saved, ...defaultGradWishes]);
+        }
+
+        function renderGradWishes(wishesArray) {
+            const container = document.getElementById('gradWishesList');
+            container.innerHTML = wishesArray.map(item => `
+                <div class="p-4 rounded-2xl bg-slate-900/80 border border-amber-400/35 hover:border-amber-300/60 transition animate-pop">
+                    <div class="flex items-center justify-between mb-1.5">
+                        <span class="font-bold text-xs sm:text-sm text-amber-300">${escapeSafe(item.sender)}</span>
+                        <span class="text-sm">🎓</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-100 leading-relaxed">${escapeSafe(item.text)}</p>
+                </div>
+            `).join('');
+        }
+
+        async function postGradWish(e) {
+            e.preventDefault();
+            const senderInput = document.getElementById('gradSenderInput');
+            const textInput = document.getElementById('gradWishInput');
+            const btn = document.getElementById('postWishBtn');
+
+            const sender = senderInput.value.trim();
+            const text = textInput.value.trim();
+            if (!sender || !text) return;
+
+            btn.disabled = true;
+            btn.textContent = 'သိမ်းဆည်းနေသည်...';
+
+            if (isFirebaseConnected && firestoreDb) {
+                try {
+                    await firestoreDb.collection('graduation_blessings').add({
+                        sender,
+                        text,
+                        createdAt: firebase.firestore.FieldValue.serverTimestamp()
+                    });
+                } catch (err) {
+                    console.error("Error saving to Firestore:", err);
+                    saveToLocalFallback(sender, text);
+                }
+            } else {
+                saveToLocalFallback(sender, text);
+            }
+
+            senderInput.value = '';
+            textInput.value = '';
+            btn.disabled = false;
+            btn.textContent = 'စာချန်ထားမယ် ✨';
+            triggerGoldConfettiBurst();
+        }
+
+        function saveToLocalFallback(sender, text) {
+            let saved = [];
+            try {
+                saved = JSON.parse(localStorage.getItem('grad_guestbook_wishes_v1') || '[]');
+            } catch (e) {
+                saved = [];
+            }
+            saved.unshift({ sender, text });
+            try {
+                localStorage.setItem('grad_guestbook_wishes_v1', JSON.stringify(saved));
+            } catch (e) {}
+            renderGradWishes([...saved, ...defaultGradWishes]);
+        }
+
+        function escapeSafe(str) {
+            const d = document.createElement('div');
+            d.textContent = str;
+            return d.innerHTML;
+        }
+
+        /* =========================================================
+           7. WINDOW ONLOAD INITIALIZATION
+           ========================================================= */
+        window.onload = function () {
+            initGoldSparkles();
+            renderSparklesAndConfetti();
+            initGuestbookStorage();
+            goToStep(1);
+            setTimeout(() => triggerGoldConfettiBurst(), 500);
+        };
+    </script>
+</body>
+</html>
